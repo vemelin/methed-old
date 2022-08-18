@@ -7,5 +7,16 @@ const productName = 'iPhone',
 
 let summary = productNumber * productPrice;
 
+const productObject2 = {
+    name: 'iPhone 13 Pro', 
+    number: 5,
+    type: 'mobile phone',
+    price: 999,
+};
+
 console.log('Название продукта:' + ' ' + productName);
 console.log('Сумма:' + ' ' + summary + '$');
+
+console.log(`Второй товар, с названием ${productObject2.name}, 
+возможность приобрести его по следующей цене ${productObject2.price}$, в наличии ${productObject2.number} штук,
+все товары можно приобрести за общую сумму ${productObject2.price * productObject2.number}`);
