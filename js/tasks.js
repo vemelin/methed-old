@@ -2,7 +2,7 @@
 
 {
 // Task # 2
-const rain = Math.round(Math.random() * 10);
+const rain = Math.round(Math.random() * 1);
 if (rain == 1) console.log('Пошёл дождь. Возьмите зонт!');
 if (rain == 0) console.log('Дождя нет!');
 }
@@ -23,5 +23,4 @@ const getCash = + prompt('Cколько денег вы хотите снять 
 denominations = [100, 50, 20, 10, 5, 1];
 Number.isNaN(getCash) || getCash < denominations[0] ? console.log(`Банкомат не может выдать такую сумму`) :
 console.log(`Закрой рот и забирай свой деньги!`);
-console.log(100<100);
 }
