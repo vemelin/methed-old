@@ -1,11 +1,10 @@
 'use strict'
 
-let newValue = prompt ('Введите строку', '');
+const newValue = prompt('введите слово нижнего регистра', '');
 
 const modifyString = (input) => {
-    let value = input,
-    currentString = 'привет Мир';
-    console.log(currentString.push('asdfasdf'));
+    let str = input;
+    console.log(str[0].toUpperCase() + str.substring(1));
 }
 
 modifyString(newValue)
