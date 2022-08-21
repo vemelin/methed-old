@@ -11,13 +11,13 @@ const income = + prompt('Введите зарплату', '');
             break;
 
         case income >= 15000 && income <= 50000:
-            result = income * 0.2;
-            console.log(`20% на доход от 15 000 ₽ до 50 000 ₽: ${result})`);
+            result = (income - 15000) * 0.2;
+            console.log(`20% на остаточный доход от суммы свыше 15 000 ₽ и не выше 50 000 ₽: ${result})`);
             break;
 
         case income > 50000:
-            result = income * 0.3;
-            console.log(`30% на доход выше 50 000 ₽: ${result})`);
+            result = (income - 50000) * 0.3;
+            console.log(`30% на остаточный доход от суммы свыше 50 000 ₽: ${result})`);
             break;
 
         default:
