@@ -28,7 +28,7 @@
     // Task # 4
     const getCash = + prompt('Cколько денег вы хотите снять в банкомате?', '');
 
-    if (getCash % 100 == 0) {
+    if (getCash % 100 == 0 && getCash !==0) {
         console.log(`Можете забрать деньги`)
     } else {
         console.log(`Банкомат не может выдать вам такую сумму`);
