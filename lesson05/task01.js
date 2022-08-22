@@ -1,17 +1,16 @@
 'use strict'
 
-const newValue = + prompt('Введите сумму', '');
-
 const currencyConverter = (input) => {
     let amount = input;
     if (!Number.isNaN(amount) && amount > 0) {
-        const usd = 73;
-        let eur = amount * usd * 1.2;
-        return console.log(`Вы получите: ${eur}€`);
+        const rub = 73, usd = 1.2,
+            eur = rub * usd,
+            sum = amount * eur;
+        return console.log(`Вы получите: ${sum}₽`);
     }
     else {
         console.log('Вам требуется ввести сумму');
     }
 };
 
-currencyConverter(newValue);
+currencyConverter(400);
