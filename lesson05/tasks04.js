@@ -4,7 +4,7 @@
 
 const calculate = (totalAmount, cartQuantity, promoCode) => {
     const firstPromoCode = (totalAmount * cartQuantity) * 0.3,
-        secondPromoCode =(totalAmount * cartQuantity) * 0.15,
+        secondPromoCode = ((totalAmount * cartQuantity) - 30000) * 0.15,
         thirdPromoCode = (totalAmount * cartQuantity) * 0.10;
     switch (true) {
         case cartQuantity >= 10:
@@ -25,4 +25,4 @@ const calculate = (totalAmount, cartQuantity, promoCode) => {
 
 }
 
-calculate(1000, 5, 'METHED');
+calculate(70000, 5, 'G3H2Z1');

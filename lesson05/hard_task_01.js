@@ -6,5 +6,5 @@
         if (!y) return x;
         return NOD(y, x % y);
     }
-    console.log(NOD(15, 28));
+    console.log(NOD(84, 90));
 }

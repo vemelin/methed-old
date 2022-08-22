@@ -13,4 +13,4 @@ const currencyConverter = (input) => {
     }
 };
 
-currencyConverter(400);
+currencyConverter(10);
